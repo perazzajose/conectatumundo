@@ -31,7 +31,7 @@ export default function RecursosPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="pt-16 flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 gradient-bg-blue text-white relative overflow-hidden">
         <div className="absolute inset-0 dots-pattern opacity-10"></div>

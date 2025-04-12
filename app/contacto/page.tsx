@@ -22,7 +22,7 @@ export default function ContactoPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="pt-16 flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24  gradient-bg-blue">
         <div className="container px-4 md:px-6">

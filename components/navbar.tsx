@@ -10,7 +10,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-gray-200/40 bg-gray-600/50 backdrop-blur-md shadow-[0_0_5px_5px_rgba(127,0,255,0.2)]">
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-gray-200/40 bg-purple-300/50 backdrop-blur-md shadow-[0_0_5px_5px_rgba(127,0,255,0.2)] h-16">
+
 
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
@@ -44,11 +45,15 @@ export default function Navbar() {
             <Link href="/contacto">Contáctanos</Link>
           </Button>
           <Button
-            asChild
-            className="bg-purple-600 hover:bg-purple-600 hover:to-purple-900 border-0"
-          >
-            <Link href="/servicios">Nuestros Servicios</Link>
-          </Button>
+  asChild
+  className="border-0"
+>
+  <Link 
+    href="/servicios" 
+    className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded">
+    Nuestros Servicios
+  </Link>
+</Button>
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
