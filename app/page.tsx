@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section con blur */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-purple-900/50 backdrop-blur-sm">
+      <section className="w-full py-12 md:py-24 lg:py-32 gradient-bg-blue">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">

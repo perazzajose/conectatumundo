@@ -6,7 +6,7 @@ export default function ServiciosPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section con blur */}
-      <section className="w-full py-12 md:py-24  bg-purple-900/50 backdrop-blur-sm">
+      <section className="w-full py-12 md:py-24 gradient-bg-blue">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
