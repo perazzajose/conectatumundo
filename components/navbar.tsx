@@ -62,7 +62,7 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="bg-background/95 backdrop-blur-md border-l border-border/50">
+          <SheetContent side="right" className="bg-background/35 backdrop-blur-md border-l border-border/50">
             <div className="flex flex-col gap-6 mt-8">
               <Link
                 href="/"
@@ -78,6 +78,16 @@ export default function Navbar() {
               >
                 Servicios
               </Link>
+
+              <Link
+                href="/recursos"
+                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Servicios
+              </Link>
+
+
               <Link
                 href="/nosotros"
                 className="text-lg font-medium hover:text-blue-400 transition-colors"
@@ -95,13 +105,13 @@ export default function Navbar() {
               <div className="flex flex-col gap-2 mt-4">
                 <Button
                   asChild
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 border-0"
+                  className="w-full bg-gradient-to-r from-purple-600 to-purple-800 hover:from-blue-700  border-0"
                 >
                   <Link href="/servicios" onClick={() => setIsOpen(false)}>
                     Nuestros Servicios
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="w-full border-blue-500/50 hover:border-blue-500">
+                <Button asChild variant="outline" className="w-full border-gray-500/50 hover:border-gray-500">
                   <Link href="/contacto" onClick={() => setIsOpen(false)}>
                     Contáctanos
                   </Link>
