@@ -135,7 +135,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-blue-200">09X XXX XXX</span>
+                <span className="text-blue-200">098 104 211</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-blue-400" />

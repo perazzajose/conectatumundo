@@ -96,7 +96,7 @@ export default function ContactoPage() {
               {/* Mapa (placeholder) */}
               <div className="aspect-video w-full rounded-lg overflow-hidden border border-gray-200">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://cdn.pixabay.com/photo/2022/01/11/05/28/contact-6929779_640.jpg"
                   alt="Mapa de ubicación"
                   className="object-cover w-full h-full"
                 />

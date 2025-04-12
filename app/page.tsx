@@ -31,7 +31,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 border-white/30">
-                  <Link href="/contacto">Contactanos</Link>
+                  <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">Contactanos</Link>
                 </Button>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
                 Contáctanos para soluciones personalizadas a tus necesidades específicas.
               </p>
               <Button asChild variant="outline" className="border-purple-300 text-purple-700 hover:bg-purple-50/50">
-                <Link href="/contacto">Contactar</Link>
+                <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">Contactar</Link>
               </Button>
             </div>
           </div>
@@ -219,7 +219,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild size="lg" className="bg-indigo-700 hover:bg-indigo-800 text-white backdrop-blur-md">
-                <Link href="/contacto">
+                <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

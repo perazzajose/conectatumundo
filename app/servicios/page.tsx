@@ -69,7 +69,7 @@ export default function ServiciosPage() {
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm">
-                  <Link href="/contacto">Solicitar información</Link>
+                  <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">Solicitar información</Link>
                 </Button>
               </div>
             </div>
@@ -110,17 +110,17 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
                 <li className="flex items-start gap-2">
                   <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
                   <div>
-                    <span className="font-bold text-gray-900">Matemáticas:</span>
-                    <span className="text-gray-700"> Álgebra, geometría, cálculo y estadística.</span>
+                    <span className="font-bold text-gray-900">Literatura:</span>
+                    <span className="text-gray-700"> Generos, Narrativa, Poesia, Lirica tradicional, Epica, Modernismo, Romanticismo etc....</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
                   <div>
-                    <span className="font-bold text-gray-900">Inglés:</span>
+                    <span className="font-bold text-gray-900">Historia:</span>
                     <span className="text-gray-700">
                       {" "}
-                      Gramática, conversación, preparación para exámenes internacionales.
+                      Prehistoria, Edad Media, Feudalismo, Ilustración, Crisis 29, Dictadura 73, etc...
                     </span>
                   </div>
                 </li>
@@ -134,19 +134,15 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
                 <li className="flex items-start gap-2">
                   <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
                   <div>
-                    <span className="font-bold text-gray-900">Apoyo escolar:</span>
+                    <span className="font-bold text-gray-900">Apoyo:</span>
                     <span className="text-gray-700">
                       {" "}
-                      Preparación para exámenes, técnicas de estudio, tareas dirigidas.
+                      Preparación para todos los exámenes, técnicas de estudio, tareas dirigidas.
                     </span>
                   </div>
                 </li>
               </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm">
-                  <Link href="/contacto">Agendar una clase</Link>
-                </Button>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -195,9 +191,7 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm">
-                  <Link href="/contacto">Solicitar servicio técnico</Link>
-                </Button>
+              
               </div>
             </div>
             <div className="flex justify-center">
@@ -264,11 +258,7 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
                   </div>
                 </li>
               </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm">
-                  <Link href="/contacto">Solicitar presupuesto</Link>
-                </Button>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -321,11 +311,7 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
                   </div>
                 </li>
               </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm">
-                  <Link href="/contacto">Agendar asesoría</Link>
-                </Button>
-              </div>
+              
             </div>
             <div className="flex justify-center">
               <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-xl backdrop-blur-xs">
@@ -352,7 +338,7 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-800 text-white backdrop-blur-md">
-                <Link href="/contacto">
+                <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

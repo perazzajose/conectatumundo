@@ -284,7 +284,7 @@ export default function RecursosPage() {
                 a través de nuestro formulario de contacto y los revisaremos para incluirlos en nuestra biblioteca.
               </p>
               <Button asChild className="mt-4 w-full" variant="outline">
-                <Link href="/contacto">Compartir recursos</Link>
+                <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">Compartir recursos</Link>
               </Button>
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function RecursosPage() {
                 size="lg"
                 className="bg-gradient-to-r from-indigo-500 to-yellow-500  border-0"
               >
-                <Link href="/contacto">
+                <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">
                   Solicitar recursos <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
