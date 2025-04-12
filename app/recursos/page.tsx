@@ -306,7 +306,7 @@ export default function RecursosPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 border-0"
+                className="bg-gradient-to-r from-indigo-500 to-yellow-500  border-0"
               >
                 <Link href="/contacto">
                   Solicitar recursos <ArrowRight className="ml-2 h-4 w-4" />

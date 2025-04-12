@@ -206,11 +206,11 @@ export default function Home() {
       </section>
 
       {/* CTA con blur */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-purple-800/90 backdrop-blur-sm">
+      <section className="w-full py-12 md:py-24 lg:py-32 gradient-bg-blue">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl  text-white">
                 ¿Listo para impulsar tu proyecto?
               </h2>
               <p className="max-w-[900px] text-purple-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -218,7 +218,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-md">
+              <Button asChild size="lg" className="bg-indigo-700 hover:bg-indigo-800 text-white backdrop-blur-md">
                 <Link href="/contacto">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-gray-200/40 bg-gray-600/50 backdrop-blur-md shadow-[0_0_30px_10px_rgba(180,0,255,0.6)]">
+    <header className="fixed top-0 left-0 z-50 w-full border-b border-gray-200/40 bg-gray-600/50 backdrop-blur-md shadow-[0_0_5px_5px_rgba(127,0,255,0.2)]">
 
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">

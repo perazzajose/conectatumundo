@@ -341,17 +341,17 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
       </section>
 
       {/* CTA con blur */}
-      <section className="w-full py-12 md:py-24 border-gray-200/40 bg-gray-600/50 ">
+      <section className="w-full py-12 md:py-24 gradient-bg-blue ">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-black">¿Listo para comenzar?</h2>
-              <p className="max-w-[900px] text-black-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-white">¿Listo para comenzar?</h2>
+              <p className="max-w-[900px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-purple-500 hover:bg-purple-600 text-white backdrop-blur-md">
+              <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-800 text-white backdrop-blur-md">
                 <Link href="/contacto">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

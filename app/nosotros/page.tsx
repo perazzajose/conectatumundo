@@ -189,7 +189,7 @@ export default function NosotrosPage() {
       </section>
 
       {/* CTA */}
-      <section className="w-full py-12 md:py-24 bg-purple-400 text-white">
+      <section className="w-full py-12 md:py-24 gradient-bg-blue text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -201,7 +201,7 @@ export default function NosotrosPage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-purple-500 hover:bg-purple-800 text-white">
+              <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-800 text-white">
                 <Link href="/contacto">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
