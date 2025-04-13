@@ -44,6 +44,10 @@ export default function ResourceCard({
     switch (platform.toLowerCase()) {
       case "google drive":
         return "bg-blue-900/20 text-blue-300 hover:bg-blue-900/30"
+      case "mega":
+        return "bg-red-900/20 text-red-200 hover:bg-red-900/30" // Rojo similar al logo de MEGA
+      case "mediafire":
+        return "bg-orange-700/20 text-orange-300 hover:bg-orange-700/30" // Naranja como su branding
       case "enlaces directos":
         return "bg-green-900/20 text-green-300 hover:bg-green-900/30"
       case "youtube":
@@ -52,7 +56,6 @@ export default function ResourceCard({
         return "bg-gray-900/20 text-gray-300 hover:bg-gray-900/30"
     }
   }
-
   return (
     <div className="flex flex-col p-4 bg-card rounded-lg border border-border hover:shadow-md transition-all hover-scale gradient-border">
       <div className="flex items-start gap-3 mb-3">

@@ -205,15 +205,99 @@ export default function RecursosPage() {
   icon={<FileText className="h-8 w-8 text-purple-400" />} 
 />
 */}
-                    <ResourceCard
-                      title="Excel, Powerpoint, Word"
-                      description="Aprende a usar el paquete office desde lo básico hasta funciones avanzadas. Recurso gratuito."
-                      category="Tutoriales"
-                      size="0 MB"
-                      platform="Google Drive"
-                      downloadUrl="https://drive.google.com/drive/folders/15eup-30YZD-aeMVJTnhqd4VqU8atgT0L"
-                      icon={<FileText className="h-8 w-8 text-green-400" />}
-                    />
+
+
+      <ResourceCard
+        title="+200 Libros de Psicología"
+        description="Colección completa de libros sobre psicología clínica, cognitiva y más."
+        category="E-books"
+        size="3.1 GB"
+        platform="Google Drive"
+        downloadUrl="https://drive.google.com/drive/u/0/folders/1TUE-CSoztg46csXyQGIvfS5rXuBfk-ZM"
+        icon={<BookOpen className="h-8 w-8 text-orange-400" />}
+      />
+
+      {/* Dirección Publicitaria */}
+      <ResourceCard
+        title="Dirección Publicitaria"
+        description="Recursos avanzados sobre marketing digital y estrategias publicitarias."
+        category="Cursos"
+        size="1.5 GB"
+        platform="Google Drive"
+        downloadUrl="https://drive.google.com/drive/u/0/folders/1WDMtrPw8MmGGhxdw-j1BN9uUn_vGVeaC"
+        icon={<FileText className="h-8 w-8 text-blue-400" />}
+      />
+
+      {/* Photoshop */}
+      <ResourceCard
+        title="Photoshop Profesional"
+        description="Tutoriales completos desde básico hasta edición profesional."
+        category="Tutoriales"
+        size="4.7 GB"
+        platform="Google Drive"
+        downloadUrl="https://drive.google.com/drive/u/0/folders/1qLegJ8UGUuPPBIVqBSfoHTK1uxokZhGs"
+        icon={<FileText className="h-8 w-8 text-green-400" />}
+      />
+
+      {/* Biblioteca de Medicina */}
+      <ResourceCard
+        title="Biblioteca de Medicina"
+        description="Libros especializados en anatomía, farmacología y cirugía."
+        category="E-books"
+        size="2.8 GB"
+        platform="Google Drive"
+        downloadUrl="https://drive.google.com/drive/u/0/folders/1hdHqaxQNi8tm-Fk86fpsHFZennA8roKH"
+        icon={<FileText className="h-8 w-8 text-purple-400" />}
+      />
+
+      {/* Tutoriales Muebles de Madera */}
+      <ResourceCard
+        title="Tutoriales Carpintería"
+        description="Guías prácticas para construir muebles de madera paso a paso."
+        category="Tutoriales"
+        size="1.2 GB"
+        platform="Google Drive"
+        downloadUrl="https://drive.google.com/drive/folders/1H9FScgUSAxD-iVN5xLYO5mmOMUNVjXVz"
+        icon={<FileText className="h-8 w-8 text-yellow-400" />}
+      />
+
+      {/* Ejemplo original (se mantiene) */}
+      <ResourceCard
+        title="Excel, Powerpoint, Word"
+        description="Aprende a usar el paquete office desde lo básico hasta funciones avanzadas."
+        category="Tutoriales"
+        size="0 MB"
+        platform="Google Drive"
+        downloadUrl="https://drive.google.com/drive/folders/15eup-30YZD-aeMVJTnhqd4VqU8atgT0L"
+        icon={<FileText className="h-8 w-8 text-green-400" />}
+      />
+   
+
+
+
+
+   <ResourceCard
+        title="Curso Profesional de Reparación de Laptops"
+        description="Aprende diagnóstico, soldadura y reparación hardware de portátiles."
+        category="Cursos"
+        size="2.5 GB"
+        platform="MediaFire"
+        downloadUrl="https://www.mediafire.com/folder/gc0y1wtjeaien/Curso+Profesional+en+Reparacion+de+Laptops"
+        icon={<FileText className="h-8 w-8 text-blue-400" />}
+      />
+
+      {/* Contabilidad para no Contadores */}
+      <ResourceCard
+        title="Curso Básico de Contabilidad"
+        description="Fundamentos contables para emprendedores y profesionales no especializados."
+        category="Cursos"
+        size="1.8 GB"
+        platform="MediaFire"
+        downloadUrl="https://www.mediafire.com/folder/msr883s9bxbk7/Curso+Básico+de+Contabilidad+para+no+Contadores"
+        icon={<FileText className="h-8 w-8 text-purple-400" />}
+      />
+
+
                     <ResourceCard
                       title="Recursos C y C++ "
                       description="Recursos gratuitos para aprender C y C++ desde cero. Compartido."
