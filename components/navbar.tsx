@@ -78,15 +78,16 @@ export default function Navbar() {
               >
                 Servicios
               </Link>
-
               <Link
                 href="/recursos"
-                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                className="text-lg font-medium transition-colors relative"
                 onClick={() => setIsOpen(false)}
               >
-                Recursos
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-400 relative">
+                  Recursos
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-green-400 to-blue-400"></span>
+                </span>
               </Link>
-
 
               <Link
                 href="/nosotros"
