@@ -64,7 +64,13 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="bg-background/35 backdrop-blur-md border-l border-border/50">
             <div className="flex flex-col gap-6 mt-8">
-             
+              <Link
+                href="/comunidad"
+                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Comunidad
+              </Link>
               <Link
                 href="/servicios"
                 className="text-lg font-medium hover:text-blue-400 transition-colors"
@@ -82,14 +88,7 @@ export default function Navbar() {
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-green-400 to-blue-400"></span>
                 </span>
               </Link>
-               
-              <Link
-                href="/comunidad"
-                className="text-lg font-medium hover:text-blue-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Comunidad
-              </Link>
+
 
               <Link
                 href="/nosotros"
