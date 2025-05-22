@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+            <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
               Conecta Tu Mundo
             </h3>
             <p className="text-blue-200 mb-4">
@@ -87,6 +87,14 @@ export default function Footer() {
                   Empleo y Carrera
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/recursos"
+                  className="text-blue-200 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200"
+                >
+                  Recursos
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -106,6 +114,30 @@ export default function Footer() {
                   className="text-blue-200 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200"
                 >
                   Servicios
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/precios"
+                  className="text-blue-200 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200"
+                >
+                  Precios
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/recursos"
+                  className="text-blue-200 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200"
+                >
+                  Recursos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/comunidad"
+                  className="text-blue-200 hover:text-white transition-colors hover:translate-x-1 inline-block transform duration-200"
+                >
+                  Comunidad
                 </Link>
               </li>
               <li>
@@ -131,15 +163,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
-                <span className="text-blue-200">Salinas, Canelones</span>
+                <span className="text-blue-200">Av. Siempreviva 123, Springfield</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-blue-200">098 104 211</span>
+                <span className="text-blue-200">+54 11 1234-5678</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-blue-200">conectatumundo01@gmail.com</span>
+                <span className="text-blue-200">info@conectatumundo.com</span>
               </li>
             </ul>
           </div>

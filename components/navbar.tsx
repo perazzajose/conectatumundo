@@ -1,6 +1,8 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react"
+import { useState } from "react"
+import Link from "next/link"
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -33,6 +35,13 @@ export default function Navbar() {
           <Link href="/recursos" className="text-sm font-medium hover:text-blue-400 transition-colors">
             Recursos
           </Link>
+           <Link
+                href="/comunidad"
+                className="text-lg font-medium hover:text-purple-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Comunidad
+              </Link>
           <Link href="/nosotros" className="text-sm font-medium hover:text-green-400 transition-colors">
             Nosotros
           </Link>
