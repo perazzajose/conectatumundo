@@ -20,7 +20,7 @@ export default function Home() {
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white"> 
                
-                En desarrollo, por informacion contactar con <a className="text-green" href="perazzajose.github.io/portfolio/">Jose Perazza</a>
+                En desarrollo <a className="text-green" href="perazzajose.github.io/portfolio/">Jose Perazza</a>
               </h1>
               <p className="max-w-[600px] text-purple-100 md:text-xl">
                 Soluciones digitales, educativas y laborales para vos. Todo lo que necesitas en un solo lugar.
