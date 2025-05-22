@@ -88,6 +88,14 @@ export default function Navbar() {
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-green-400 to-blue-400"></span>
                 </span>
               </Link>
+               
+ <Link
+                href="/comunidad"
+                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Comunidad
+              </Link>
 
               <Link
                 href="/nosotros"
