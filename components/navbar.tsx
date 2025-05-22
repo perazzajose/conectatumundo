@@ -33,15 +33,16 @@ export default function Navbar() {
           <Link href="/recursos" className="text-sm font-medium hover:text-blue-400 transition-colors">
             Recursos
           </Link>
+          <Link href="/comunidad" className="text-sm font-medium hover:text-blue-400 transition-colors">
+            Comunidad
+          </Link>
           <Link href="/nosotros" className="text-sm font-medium hover:text-green-400 transition-colors">
             Nosotros
           </Link>
           <Link href="/contacto" className="text-sm font-medium hover:text-blue-400 transition-colors">
             Contacto
           </Link>
-           <Link href="/comunidad" className="text-sm font-medium hover:text-blue-400 transition-colors">
-            Comunidad
-          </Link>
+           
         </nav>
         <div className="hidden md:flex gap-4">
           <Button asChild variant="outline" className="border-purple-500/50 hover:border-purple-500">
