@@ -64,7 +64,15 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="bg-background/35 backdrop-blur-md border-l border-border/50">
             <div className="flex flex-col gap-6 mt-8">
-              <Link
+            
+             <Link
+                href="/inicio"
+                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+              Inicio
+                 </Link>
+                  <Link
                 href="/comunidad"
                 className="text-lg font-medium hover:text-blue-400 transition-colors"
                 onClick={() => setIsOpen(false)}
