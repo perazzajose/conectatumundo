@@ -36,6 +36,9 @@ export default function Navbar() {
           <Link href="/emprendimientos" className="text-sm font-medium hover:text-blue-400 transition-colors">
             Emprendimientos
           </Link>
+            <Link href="/comunidad" className="text-sm font-medium hover:text-blue-400 transition-colors">
+            Comunidad
+          </Link>
           <Link href="/nosotros" className="text-sm font-medium hover:text-green-400 transition-colors">
             Nosotros
           </Link>
@@ -83,6 +86,15 @@ export default function Navbar() {
               >
                 Emprendimientos
               </Link>
+
+               <Link
+                href="/comunidad"
+                className="text-lg font-medium hover:text-blue-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Comunidad
+              </Link>
+
               <Link
                 href="/servicios"
                 className="text-lg font-medium hover:text-blue-400 transition-colors"
