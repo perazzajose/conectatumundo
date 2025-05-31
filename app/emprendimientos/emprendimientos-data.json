@@ -1,0 +1,36 @@
+{
+  "categorias": ["Todas", "Gastronomía", "Comercio", "Educación", "Arte y Diseño", "Moda"],
+  "emprendimientos": [
+    {
+      "id": 1,
+      "nombre": "Café del Barrio",
+      "descripcion": "Cafetería artesanal con productos orgánicos y de comercio justo.",
+      "categoria": "Gastronomía",
+      "ubicacion": "Montevideo",
+      "servicios": ["Marketing Digital", "Diseño de Marca", "Gestión de Redes"],
+      "imagen": "https://res.cloudinary.com/druegavlg/image/upload/v1748696786/Captura_de_pantalla_2025-05-30_104843_t45tki.png",
+      "logo": "https://res.cloudinary.com/druegavlg/image/upload/v1748696786/Captura_de_pantalla_2025-05-30_104843_t45tki.png",
+      "icono": "Coffee",
+      "valoracion": 4.8,
+      "destacado": true,
+      "sitioWeb": "https://cafedelbarrio.com",
+      "instagram": "@cafedelbarrio",
+      "detalles": {
+        "historia": "Café del Barrio nació en 2019 como un pequeño emprendimiento familiar con la misión de ofrecer café de especialidad en un ambiente acogedor. Comenzaron con una pequeña barra en un mercado local y hoy cuentan con su propio local.",
+        "desafio": "Necesitaban destacarse en un mercado competitivo y comunicar efectivamente sus valores de sostenibilidad y comercio justo.",
+        "solucion": "Desarrollamos una estrategia de marca coherente, diseñamos su identidad visual y establecimos una presencia digital efectiva a través de redes sociales y marketing de contenidos.",
+        "resultados": [
+          "Aumento del 65% en seguidores en Instagram en 6 meses",
+          "Incremento del 40% en ventas tras la implementación de la estrategia digital",
+          "Reconocimiento como uno de los mejores cafés artesanales de la ciudad"
+        ],
+        "testimonio": {
+          "texto": "Conecta Tu Mundo transformó nuestra presencia digital. Pasamos de ser un pequeño café de barrio a convertirnos en un referente del café de especialidad en la ciudad. Su enfoque estratégico y atención personalizada hicieron toda la diferencia.",
+          "autor": "María Fernández",
+          "cargo": "Fundadora de Café del Barrio"
+        },
+        "galeria": ["https://ibb.co/xSsjCG2q", "https://ibb.co/xSsjCG2q", "https://ibb.co/xSsjCG2q"]
+      }
+    }
+  ]
+}
