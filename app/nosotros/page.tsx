@@ -201,7 +201,7 @@ export default function NosotrosPage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-800 text-white">
+              <Button asChild size="lg" className="bg-violet-400 hover:bg-violet-500 text-white">
                 <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

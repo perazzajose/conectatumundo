@@ -81,7 +81,7 @@ export default function ResourceCard({
         <Button
           asChild
           size="sm"
-          className="gap-1 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 border-0"
+          className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded"
         >
           <Link href={downloadUrl} target="_blank" rel="noopener noreferrer">
             <Download className="h-4 w-4" /> Acceder

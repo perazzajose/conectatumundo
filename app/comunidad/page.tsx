@@ -215,7 +215,7 @@ export default function ComunidadPage() {
 
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900">
+                <Button className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded">
                   <Plus className="mr-2 h-4 w-4" /> Postularme como tutor
                 </Button>
               </DialogTrigger>
@@ -352,9 +352,9 @@ export default function ComunidadPage() {
                     <p className="text-sm text-muted-foreground line-clamp-3">{tutor.descripcion}</p>
                   </CardContent>
                   <CardFooter>
-                    <Button asChild className="w-full gap-2">
+                    <Button asChild className="bg-violet-400 hover:bg-violet-500 w-full gap-2">
                       <Link href={`/contacto?tutor=${tutor.nombre}`}>
-                        <MessageCircle className="h-4 w-4" /> Contactar
+                        <MessageCircle className=" h-4 w-4" /> Contactar
                       </Link>
                     </Button>
                   </CardFooter>
@@ -507,7 +507,7 @@ export default function ComunidadPage() {
               <DialogTrigger asChild>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 border-0"
+                  className="bg-violet-400 hover:bg-violet-500 border-0"
                 >
                   Postularme ahora
                 </Button>

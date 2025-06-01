@@ -163,15 +163,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
-                <span className="text-blue-200">Av. Siempreviva 123, Springfield</span>
+                <span className="text-blue-200">Salinas, Canelones </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-blue-200">+54 11 1234-5678</span>
+                <span className="text-blue-200">+598 95 197 314</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-blue-200">info@conectatumundo.com</span>
+                <span className="text-blue-200">conectatumundo01@gmail.com</span>
               </li>
             </ul>
           </div>

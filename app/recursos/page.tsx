@@ -1124,7 +1124,7 @@ export default function RecursosPage() {
       </p>
       <a
         href="/contacto"
-        className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-blue-600 to-blue-800 text-white hover:from-blue-700 hover:to-blue-900 h-10 px-6 py-2"
+        className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded"
       >
         Solicitar asesoramiento
         <svg
@@ -1170,7 +1170,7 @@ export default function RecursosPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-indigo-500 to-yellow-500  border-0"
+                className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded"
               >
                 <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">
                   Solicitar recursos <ArrowRight className="ml-2 h-4 w-4" />

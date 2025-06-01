@@ -20,13 +20,13 @@ export default function Home() {
             <div className="space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white"> 
                
-                En desarrollo <a className="text-green" href="http://perazzajose.github.io/portfolio/">Jose Perazza</a>
+                En desarrollo <a className="text-violet-400" href="http://perazzajose.github.io/portfolio/">Jose Perazza</a>
               </h1>
               <p className="max-w-[600px] text-purple-100 md:text-xl">
                 Soluciones digitales, educativas y laborales para vos. Todo lo que necesitas en un solo lugar.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-md">
+                <Button asChild size="lg" className="bg-violet-400 hover:bg-violet-500 text-white backdrop-blur-md">
                   <Link href="/servicios">
                     Nuestros Servicios <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -152,7 +152,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm">
+                <Button asChild className="bg-violet-400 hover:bg-violet-500 text-white backdrop-blur-sm">
                   <Link href="/nosotros">Conoce más sobre nosotros</Link>
                 </Button>
               </div>
@@ -219,7 +219,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-indigo-700 hover:bg-indigo-800 text-white backdrop-blur-md">
+              <Button asChild size="lg" className="bg-violet-400 hover:bg-violet-500 text-white backdrop-blur-md">
                 <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">
                   Contactar ahora <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
