@@ -10,7 +10,7 @@
       "servicios": ["Marketing Digital", "Diseño de Marca", "Gestión de Redes"],
       "imagen": "https://res.cloudinary.com/druegavlg/image/upload/v1748696786/Captura_de_pantalla_2025-05-30_104843_t45tki.png",
       "logo": "https://res.cloudinary.com/druegavlg/image/upload/v1748696786/Captura_de_pantalla_2025-05-30_104843_t45tki.png",
-      "icono": "Coffee",
+      "icono": "Utensils",
       "valoracion": 5.0,
       "destacado": true,
       "sitioWeb": "https://tamis.vercel.app",
@@ -29,7 +29,7 @@
           "autor": "",
           "cargo": ""
         },
-        "galeria": ["https://ibb.co/xSsjCG2q", "https://ibb.co/xSsjCG2q", "https://ibb.co/xSsjCG2q"]
+        "galeria": ["https://res.cloudinary.com/druegavlg/image/upload/v1748854698/2024-12-15_2_dh4jfx.webp", "https://res.cloudinary.com/druegavlg/image/upload/v1748854705/2024-12-15_rhxqlf.webp", "https://res.cloudinary.com/druegavlg/image/upload/v1748854702/2024-12-15_1_lpoecr.webp"]
       }
     }
   ]

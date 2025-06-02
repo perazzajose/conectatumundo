@@ -116,7 +116,7 @@ export default function EmprendimientosPage() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
-              <Button type="submit" className="bg-white text-blue-700 hover:bg-white/90">
+              <Button type="submit" className="bg-violet-500 hover:bg-violet-600 text-white border-0">
                 <Search className="h-4 w-4 md:hidden" />
                 <span className="hidden md:inline">Buscar</span>
               </Button>
@@ -139,9 +139,17 @@ export default function EmprendimientosPage() {
                   onValueChange={setCategoriaActiva}
                   className="w-full"
                 >
-                  <TabsList className="bg-card/50">
+                  <TabsList className="bg-transparent flex flex-wrap gap-2 h-auto">
                     {categorias.map((categoria: string) => (
-                      <TabsTrigger key={categoria} value={categoria} className="text-xs lg:text-sm">
+                      <TabsTrigger
+                        key={categoria}
+                        value={categoria}
+                        className={`text-xs lg:text-sm py-2 px-4 rounded transition-all ${
+                          categoriaActiva === categoria
+                            ? "bg-violet-500 text-white"
+                            : "bg-violet-100 text-violet-700 hover:bg-violet-200"
+                        }`}
+                      >
                         {categoria}
                       </TabsTrigger>
                     ))}
@@ -153,7 +161,10 @@ export default function EmprendimientosPage() {
               <div className="md:hidden w-full">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="outline" className="w-full justify-between">
+                    <Button
+                      variant="outline"
+                      className="w-full justify-between bg-violet-500 text-white border-0 hover:bg-violet-600"
+                    >
                       <span className="flex items-center gap-2">
                         <Filter className="h-4 w-4" />
                         {categoriaActiva}
@@ -161,12 +172,16 @@ export default function EmprendimientosPage() {
                       <ChevronDown className="h-4 w-4" />
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="w-full">
+                  <DropdownMenuContent className="w-[200px]">
                     {categorias.map((categoria: string) => (
                       <DropdownMenuItem
                         key={categoria}
                         onClick={() => setCategoriaActiva(categoria)}
-                        className={categoriaActiva === categoria ? "bg-accent" : ""}
+                        className={`cursor-pointer ${
+                          categoriaActiva === categoria
+                            ? "bg-violet-500 text-white"
+                            : "hover:bg-violet-100 hover:text-violet-700"
+                        }`}
                       >
                         {categoria}
                       </DropdownMenuItem>
@@ -188,33 +203,33 @@ export default function EmprendimientosPage() {
           {/* Emprendimientos destacados */}
           {categoriaActiva === "Todas" && (
             <div className="mb-12">
-              <h2 className="text-xl md:text-2xl font-bold mb-6 text-blue-700">Emprendimientos Destacados</h2>
+              <h2 className="text-xl md:text-2xl font-bold mb-6 text-violet-700">Emprendimientos Destacados</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {emprendimientos
                   .filter((emp: Emprendimiento) => emp.destacado)
                   .map((emprendimiento: Emprendimiento) => (
                     <Card
                       key={emprendimiento.id}
-                      className="overflow-hidden hover:shadow-lg transition-all cursor-pointer hover:scale-[1.02]"
+                      className="overflow-hidden hover:shadow-lg transition-all cursor-pointer hover:scale-[1.02] border-violet-100"
                       onClick={() => setEmprendimientoSeleccionado(emprendimiento)}
                     >
-                      <div className="relative h-40 md:h-48">
+                      <div className="relative h-40 md:h-48 flex items-center justify-center bg-gray-100">
                         <Image
                           src={getSafeImageUrl(emprendimiento.imagen, emprendimiento.nombre) || "/placeholder.svg"}
                           alt={emprendimiento.nombre}
-                          width={400}
-                          height={300}
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-contain"
                           onError={() => handleImageError(emprendimiento.imagen)}
                         />
-                        <div className="absolute top-3 right-3">
-                          <Badge className="bg-orange-500 text-white text-xs">Destacado</Badge>
+                        <div className="absolute top-3 right-3 z-10">
+                          <Badge className="bg-orange-500 text-white text-xs border-0">Destacado</Badge>
                         </div>
                       </div>
                       <CardHeader className="pb-2 p-4">
                         <div className="flex justify-between items-start gap-2">
                           <div className="flex items-center gap-2 min-w-0 flex-1">
-                            <div className="rounded-full bg-blue-100 p-1.5 flex-shrink-0">{emprendimiento.icono}</div>
+                            <div className="rounded-full bg-violet-100 p-1.5 flex-shrink-0">{emprendimiento.icono}</div>
                             <div className="min-w-0 flex-1">
                               <CardTitle className="text-sm md:text-base truncate">{emprendimiento.nombre}</CardTitle>
                               <CardDescription className="text-xs md:text-sm">
@@ -234,7 +249,11 @@ export default function EmprendimientosPage() {
                         </p>
                         <div className="flex flex-wrap gap-1 mt-3">
                           {emprendimiento.servicios.slice(0, 2).map((servicio: string, index: number) => (
-                            <Badge key={index} variant="secondary" className="text-xs">
+                            <Badge
+                              key={index}
+                              variant="secondary"
+                              className="text-xs bg-violet-100 text-violet-700 hover:bg-violet-200"
+                            >
                               {servicio}
                             </Badge>
                           ))}
@@ -248,7 +267,7 @@ export default function EmprendimientosPage() {
                       <CardFooter className="pt-0 p-4">
                         <Button
                           variant="ghost"
-                          className="w-full justify-center text-blue-600 hover:text-blue-700 hover:bg-blue-50 text-sm"
+                          className="w-full justify-center bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded text-sm"
                         >
                           Ver detalles
                         </Button>
@@ -261,7 +280,7 @@ export default function EmprendimientosPage() {
 
           {/* Todos los emprendimientos */}
           <div>
-            <h2 className="text-xl md:text-2xl font-bold mb-6 text-blue-700">
+            <h2 className="text-xl md:text-2xl font-bold mb-6 text-violet-700">
               {categoriaActiva === "Todas" ? "Todos los Emprendimientos" : `Emprendimientos: ${categoriaActiva}`}
             </h2>
 
@@ -277,21 +296,21 @@ export default function EmprendimientosPage() {
                 {emprendimientosFiltrados.map((emprendimiento: Emprendimiento) => (
                   <Card
                     key={emprendimiento.id}
-                    className="overflow-hidden hover:shadow-lg transition-all cursor-pointer hover:scale-[1.02]"
+                    className="overflow-hidden hover:shadow-lg transition-all cursor-pointer hover:scale-[1.02] border-violet-100"
                     onClick={() => setEmprendimientoSeleccionado(emprendimiento)}
                   >
-                    <div className="relative h-32 md:h-40">
+                    <div className="relative h-32 md:h-40 flex items-center justify-center bg-gray-100">
                       <Image
                         src={getSafeImageUrl(emprendimiento.imagen, emprendimiento.nombre) || "/placeholder.svg"}
                         alt={emprendimiento.nombre}
-                        width={400}
-                        height={300}
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                        className="object-contain"
                         onError={() => handleImageError(emprendimiento.imagen)}
                       />
                       {emprendimiento.destacado && (
-                        <div className="absolute top-2 right-2">
-                          <Badge className="bg-orange-500 text-white text-xs">Destacado</Badge>
+                        <div className="absolute top-2 right-2 z-10">
+                          <Badge className="bg-orange-500 text-white text-xs border-0">Destacado</Badge>
                         </div>
                       )}
                     </div>
@@ -299,7 +318,7 @@ export default function EmprendimientosPage() {
                       <div className="flex justify-between items-start gap-2">
                         <div className="min-w-0 flex-1">
                           <CardTitle className="flex items-center gap-2 text-sm md:text-base">
-                            <span className="rounded-full bg-blue-100 p-1 flex-shrink-0">{emprendimiento.icono}</span>
+                            <span className="rounded-full bg-violet-100 p-1 flex-shrink-0">{emprendimiento.icono}</span>
                             <span className="truncate">{emprendimiento.nombre}</span>
                           </CardTitle>
                           <CardDescription className="text-xs md:text-sm">{emprendimiento.categoria}</CardDescription>
@@ -316,7 +335,11 @@ export default function EmprendimientosPage() {
                       </p>
                       <div className="flex flex-wrap gap-1 mt-2">
                         {emprendimiento.servicios.slice(0, 2).map((servicio: string, index: number) => (
-                          <Badge key={index} variant="secondary" className="text-xs">
+                          <Badge
+                            key={index}
+                            variant="secondary"
+                            className="text-xs bg-violet-100 text-violet-700 hover:bg-violet-200"
+                          >
                             {servicio}
                           </Badge>
                         ))}
@@ -330,7 +353,7 @@ export default function EmprendimientosPage() {
                     <CardFooter className="pt-0 p-3 md:p-4">
                       <Button
                         variant="ghost"
-                        className="w-full justify-center text-blue-600 hover:text-blue-700 hover:bg-blue-50 text-sm"
+                        className="w-full justify-center bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded text-sm"
                       >
                         Ver detalles
                       </Button>
@@ -344,10 +367,10 @@ export default function EmprendimientosPage() {
       </section>
 
       {/* Cómo Colaboramos */}
-      <section className="w-full py-8 md:py-16 lg:py-24 bg-card/30">
+      <section className="w-full py-8 md:py-16 lg:py-24 bg-violet-50">
         <div className="container px-4 md:px-6">
           <div className="text-center space-y-4 mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tighter text-blue-700">Cómo Colaboramos</h2>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tighter text-violet-700">Cómo Colaboramos</h2>
             <p className="text-muted-foreground max-w-[800px] mx-auto text-sm md:text-base">
               Ofrecemos soluciones integrales para emprendedores que buscan destacarse en el mercado digital y hacer
               crecer su negocio.
@@ -355,87 +378,87 @@ export default function EmprendimientosPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <Card className="border-border/50">
+            <Card className="border-violet-100">
               <CardHeader className="p-4 md:p-6">
-                <div className="rounded-full bg-blue-100 p-2 md:p-3 w-fit">
-                  <Palette className="h-5 w-5 md:h-6 md:w-6 text-blue-600" />
+                <div className="rounded-full bg-violet-100 p-2 md:p-3 w-fit">
+                  <Palette className="h-5 w-5 md:h-6 md:w-6 text-violet-600" />
                 </div>
                 <CardTitle className="text-lg md:text-xl">Identidad y Branding</CardTitle>
               </CardHeader>
               <CardContent className="p-4 md:p-6 pt-0">
                 <ul className="space-y-2 text-muted-foreground text-sm md:text-base">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Diseño de logo e identidad visual</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Estrategia de marca</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Materiales de comunicación</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Fotografía profesional</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-border/50">
+            <Card className="border-violet-100">
               <CardHeader className="p-4 md:p-6">
-                <div className="rounded-full bg-blue-100 p-2 md:p-3 w-fit">
-                  <Globe className="h-5 w-5 md:h-6 md:w-6 text-blue-600" />
+                <div className="rounded-full bg-violet-100 p-2 md:p-3 w-fit">
+                  <Globe className="h-5 w-5 md:h-6 md:w-6 text-violet-600" />
                 </div>
                 <CardTitle className="text-lg md:text-xl">Presencia Digital</CardTitle>
               </CardHeader>
               <CardContent className="p-4 md:p-6 pt-0">
                 <ul className="space-y-2 text-muted-foreground text-sm md:text-base">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Desarrollo web y e-commerce</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Optimización para buscadores (SEO)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Integración de pasarelas de pago</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Automatización de procesos</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            <Card className="border-border/50">
+            <Card className="border-violet-100">
               <CardHeader className="p-4 md:p-6">
-                <div className="rounded-full bg-blue-100 p-2 md:p-3 w-fit">
-                  <MessageSquare className="h-5 w-5 md:h-6 md:w-6 text-blue-600" />
+                <div className="rounded-full bg-violet-100 p-2 md:p-3 w-fit">
+                  <MessageSquare className="h-5 w-5 md:h-6 md:w-6 text-violet-600" />
                 </div>
                 <CardTitle className="text-lg md:text-xl">Marketing y Comunicación</CardTitle>
               </CardHeader>
               <CardContent className="p-4 md:p-6 pt-0">
                 <ul className="space-y-2 text-muted-foreground text-sm md:text-base">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Gestión de redes sociales</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Estrategia de contenidos</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Campañas publicitarias</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="h-4 w-4 text-blue-500 mt-1 flex-shrink-0" />
+                    <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                     <span>Email marketing</span>
                   </li>
                 </ul>
@@ -444,7 +467,11 @@ export default function EmprendimientosPage() {
           </div>
 
           <div className="mt-8 md:mt-12 text-center">
-            <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-blue-800">
+            <Button
+              asChild
+              size="lg"
+              className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded border-0"
+            >
               <Link href="/contacto">
                 ¿Quieres impulsar tu emprendimiento? <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -454,7 +481,7 @@ export default function EmprendimientosPage() {
       </section>
 
       {/* CTA */}
-      <section className="w-full py-8 md:py-16 lg:py-24 gradient-bg-blue text-white relative overflow-hidden">
+      <section className="w-full py-8 md:py-16 lg:py-24 bg-gradient-to-r from-violet-600 to-violet-800 text-white relative overflow-hidden">
         <div className="absolute inset-0 grid-pattern opacity-10"></div>
         <div className="container px-4 md:px-6 relative">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -462,7 +489,7 @@ export default function EmprendimientosPage() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter">
                 ¿Listo para llevar tu emprendimiento al siguiente nivel?
               </h2>
-              <p className="max-w-[900px] text-blue-100 text-sm md:text-base lg:text-xl/relaxed px-4">
+              <p className="max-w-[900px] text-violet-100 text-sm md:text-base lg:text-xl/relaxed px-4">
                 Contáctanos para una consultoría gratuita y descubre cómo podemos ayudarte a crecer en el mundo digital.
               </p>
             </div>
@@ -470,7 +497,7 @@ export default function EmprendimientosPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 border-0 flex-1"
+                className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded border-0 flex-1"
               >
                 <Link href="/contacto">
                   <span className="hidden sm:inline">Solicitar consultoría gratuita</span>
@@ -481,8 +508,7 @@ export default function EmprendimientosPage() {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="bg-transparent border-white/20 text-white hover:bg-white/10 flex-1"
+                className="bg-transparent border border-white/20 text-white hover:bg-white/10 py-2 px-4 rounded flex-1"
               >
                 <Link href="/servicios">Ver servicios</Link>
               </Button>
@@ -493,47 +519,59 @@ export default function EmprendimientosPage() {
 
       {/* Diálogo de Detalle de Emprendimiento */}
       <Dialog open={!!emprendimientoSeleccionado} onOpenChange={() => setEmprendimientoSeleccionado(null)}>
-        <DialogContent className="sm:max-w-[900px] max-h-[90vh] overflow-y-auto">
+        <DialogContent className="sm:max-w-[900px] max-h-[90vh] overflow-y-auto border-violet-200">
           {emprendimientoSeleccionado && (
             <>
               <DialogHeader>
                 <div className="flex items-center gap-3">
-                  <div className="rounded-full bg-blue-100 p-2">{emprendimientoSeleccionado.icono}</div>
+                  <div className="rounded-full bg-violet-100 p-2">{emprendimientoSeleccionado.icono}</div>
                   <DialogTitle className="text-xl md:text-2xl">{emprendimientoSeleccionado.nombre}</DialogTitle>
                 </div>
                 <DialogDescription className="flex items-center gap-2">
-                  <Badge>{emprendimientoSeleccionado.categoria}</Badge>
+                  <Badge className="bg-violet-100 text-violet-700 hover:bg-violet-200 border-0">
+                    {emprendimientoSeleccionado.categoria}
+                  </Badge>
                   <span className="text-muted-foreground">{emprendimientoSeleccionado.ubicacion}</span>
                 </DialogDescription>
               </DialogHeader>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <Image
-                    src={
-                      getSafeImageUrl(emprendimientoSeleccionado.imagen, emprendimientoSeleccionado.nombre) ||
-                      "/placeholder.svg" ||
-                      "/placeholder.svg"
-                    }
-                    alt={emprendimientoSeleccionado.nombre}
-                    width={400}
-                    height={300}
-                    className="w-full h-48 md:h-64 object-cover rounded-md mb-4"
-                    onError={() => handleImageError(emprendimientoSeleccionado.imagen)}
-                  />
+                  <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100 rounded-md mb-4">
+                    <Image
+                      src={
+                        getSafeImageUrl(emprendimientoSeleccionado.imagen, emprendimientoSeleccionado.nombre) ||
+                        "/placeholder.svg" ||
+                        "/placeholder.svg"
+                      }
+                      alt={emprendimientoSeleccionado.nombre}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain rounded-md"
+                      onError={() => handleImageError(emprendimientoSeleccionado.imagen)}
+                    />
+                  </div>
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-base md:text-lg font-semibold mb-2">Sobre el emprendimiento</h3>
+                      <h3 className="text-base md:text-lg font-semibold mb-2 text-violet-700">
+                        Sobre el emprendimiento
+                      </h3>
                       <p className="text-muted-foreground text-sm md:text-base">
                         {emprendimientoSeleccionado.detalles.historia}
                       </p>
                     </div>
 
                     <div>
-                      <h3 className="text-base md:text-lg font-semibold mb-2">Servicios implementados</h3>
+                      <h3 className="text-base md:text-lg font-semibold mb-2 text-violet-700">
+                        Servicios implementados
+                      </h3>
                       <div className="flex flex-wrap gap-2">
                         {emprendimientoSeleccionado.servicios.map((servicio: string, index: number) => (
-                          <Badge key={index} variant="secondary" className="text-xs">
+                          <Badge
+                            key={index}
+                            variant="secondary"
+                            className="text-xs bg-violet-100 text-violet-700 hover:bg-violet-200 border-0"
+                          >
                             {servicio}
                           </Badge>
                         ))}
@@ -542,7 +580,12 @@ export default function EmprendimientosPage() {
 
                     <div className="flex flex-col sm:flex-row gap-3">
                       {emprendimientoSeleccionado.sitioWeb && (
-                        <Button asChild variant="outline" size="sm" className="gap-2">
+                        <Button
+                          asChild
+                          variant="outline"
+                          size="sm"
+                          className="gap-2 border-violet-200 hover:bg-violet-50"
+                        >
                           <a
                             href={emprendimientoSeleccionado.sitioWeb}
                             target="_blank"
@@ -554,7 +597,12 @@ export default function EmprendimientosPage() {
                         </Button>
                       )}
                       {emprendimientoSeleccionado.instagram && (
-                        <Button asChild variant="outline" size="sm" className="gap-2">
+                        <Button
+                          asChild
+                          variant="outline"
+                          size="sm"
+                          className="gap-2 border-violet-200 hover:bg-violet-50"
+                        >
                           <a
                             href={`https://instagram.com/${emprendimientoSeleccionado.instagram.replace("@", "")}`}
                             target="_blank"
@@ -571,25 +619,25 @@ export default function EmprendimientosPage() {
 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-base md:text-lg font-semibold mb-2">El desafío</h3>
+                    <h3 className="text-base md:text-lg font-semibold mb-2 text-violet-700">El desafío</h3>
                     <p className="text-muted-foreground text-sm md:text-base">
                       {emprendimientoSeleccionado.detalles.desafio}
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="text-base md:text-lg font-semibold mb-2">Nuestra solución</h3>
+                    <h3 className="text-base md:text-lg font-semibold mb-2 text-violet-700">Nuestra solución</h3>
                     <p className="text-muted-foreground text-sm md:text-base">
                       {emprendimientoSeleccionado.detalles.solucion}
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="text-base md:text-lg font-semibold mb-2">Resultados</h3>
+                    <h3 className="text-base md:text-lg font-semibold mb-2 text-violet-700">Resultados</h3>
                     <ul className="space-y-2">
                       {emprendimientoSeleccionado.detalles.resultados.map((resultado: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
-                          <ArrowRight className="h-4 w-4 text-green-500 mt-1 flex-shrink-0" />
+                          <ArrowRight className="h-4 w-4 text-violet-500 mt-1 flex-shrink-0" />
                           <span className="text-muted-foreground text-sm md:text-base">{resultado}</span>
                         </li>
                       ))}
@@ -597,9 +645,9 @@ export default function EmprendimientosPage() {
                   </div>
 
                   {emprendimientoSeleccionado.detalles.testimonio && (
-                    <div className="bg-blue-50 p-4 rounded-md border border-blue-100">
-                      <h3 className="text-base md:text-lg font-semibold mb-2 text-blue-700">Testimonio</h3>
-                      <blockquote className="border-l-4 border-blue-300 pl-4 italic text-muted-foreground text-sm md:text-base">
+                    <div className="bg-violet-50 p-4 rounded-md border border-violet-100">
+                      <h3 className="text-base md:text-lg font-semibold mb-2 text-violet-700">Testimonio</h3>
+                      <blockquote className="border-l-4 border-violet-300 pl-4 italic text-muted-foreground text-sm md:text-base">
                         "{emprendimientoSeleccionado.detalles.testimonio.texto}"
                       </blockquote>
                       <div className="mt-2 text-sm">
@@ -613,21 +661,25 @@ export default function EmprendimientosPage() {
 
               {emprendimientoSeleccionado.detalles.galeria && (
                 <div className="mt-6">
-                  <h3 className="text-base md:text-lg font-semibold mb-3">Galería</h3>
+                  <h3 className="text-base md:text-lg font-semibold mb-3 text-violet-700">Galería</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {emprendimientoSeleccionado.detalles.galeria.map((imagen: string, index: number) => (
-                      <Image
+                      <div
                         key={index}
-                        src={getSafeImageUrl(
-                          imagen,
-                          `${emprendimientoSeleccionado.nombre || "/placeholder.svg"} - Imagen ${index + 1}`,
-                        )}
-                        alt={`${emprendimientoSeleccionado.nombre} - Imagen ${index + 1}`}
-                        width={400}
-                        height={300}
-                        className="w-full h-24 md:h-32 object-cover rounded-md"
-                        onError={() => handleImageError(imagen)}
-                      />
+                        className="relative h-24 md:h-32 flex items-center justify-center bg-gray-100 rounded-md"
+                      >
+                        <Image
+                          src={getSafeImageUrl(
+                            imagen,
+                            `${emprendimientoSeleccionado.nombre || "/placeholder.svg"} - Imagen ${index + 1}`,
+                          )}
+                          alt={`${emprendimientoSeleccionado.nombre} - Imagen ${index + 1}`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                          className="object-contain rounded-md"
+                          onError={() => handleImageError(imagen)}
+                        />
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -637,11 +689,14 @@ export default function EmprendimientosPage() {
                 <Button
                   variant="outline"
                   onClick={() => setEmprendimientoSeleccionado(null)}
-                  className="gap-2 w-full sm:w-auto"
+                  className="gap-2 w-full sm:w-auto border-violet-200 hover:bg-violet-50"
                 >
                   Cerrar
                 </Button>
-                <Button asChild className="gap-2 bg-gradient-to-r from-blue-600 to-blue-800 w-full sm:w-auto">
+                <Button
+                  asChild
+                  className="gap-2 bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded border-0 w-full sm:w-auto"
+                >
                   <Link href="/contacto">
                     <MessageSquare className="h-4 w-4" />
                     <span className="hidden sm:inline">Contactar para un proyecto similar</span>
