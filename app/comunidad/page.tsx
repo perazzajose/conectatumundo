@@ -35,107 +35,25 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-// Datos de ejemplo para los tutores
-const tutores = [
-  {
-    id: 1,
-    nombre: "Ana Rodríguez",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Montevideo",
-    area: "Programación",
-    especialidad: "Desarrollo Web",
-    valoracion: 4.8,
-    descripcion:
-      "Desarrolladora full-stack con 5 años de experiencia. Especializada en React, Node.js y bases de datos.",
-    icono: <Code className="h-5 w-5" />,
-  },
-  {
-    id: 2,
-    nombre: "Carlos Méndez",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Canelones",
-    area: "Diseño",
-    especialidad: "UI/UX Design",
-    valoracion: 4.9,
-    descripcion:
-      "Diseñador de interfaces con experiencia en Figma y Adobe XD. Enfoque en experiencias de usuario intuitivas.",
-    icono: <PenTool className="h-5 w-5" />,
-  },
-  {
-    id: 3,
-    nombre: "Laura Fernández",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Maldonado",
-    area: "Educación",
-    especialidad: "Matemáticas",
-    valoracion: 4.7,
-    descripcion: "Profesora de matemáticas con 8 años de experiencia. Especializada en preparación para exámenes.",
-    icono: <BookOpen className="h-5 w-5" />,
-  },
-  {
-    id: 4,
-    nombre: "Martín Torres",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Montevideo",
-    area: "Tecnología",
-    especialidad: "Soporte Técnico",
-    valoracion: 4.6,
-    descripcion:
-      "Técnico en sistemas con certificaciones en reparación de equipos y redes. Experiencia en solución de problemas.",
-    icono: <Laptop className="h-5 w-5" />,
-  },
-  {
-    id: 5,
-    nombre: "Sofía Ramírez",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Colonia",
-    area: "Empleo",
-    especialidad: "Recursos Humanos",
-    valoracion: 4.9,
-    descripcion: "Consultora de RRHH especializada en selección de personal y desarrollo de carrera profesional.",
-    icono: <Briefcase className="h-5 w-5" />,
-  },
-  {
-    id: 6,
-    nombre: "Diego Álvarez",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Montevideo",
-    area: "Programación",
-    especialidad: "Desarrollo Móvil",
-    valoracion: 4.8,
-    descripcion:
-      "Desarrollador de aplicaciones móviles con experiencia en React Native y Flutter. Enfoque en rendimiento.",
-    icono: <Code className="h-5 w-5" />,
-  },
-  {
-    id: 7,
-    nombre: "Valentina Sosa",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Salto",
-    area: "Diseño",
-    especialidad: "Diseño Gráfico",
-    valoracion: 4.7,
-    descripcion:
-      "Diseñadora gráfica especializada en identidad de marca y materiales promocionales para emprendimientos.",
-    icono: <PenTool className="h-5 w-5" />,
-  },
-  {
-    id: 8,
-    nombre: "Gabriel Núñez",
-    avatar: "/placeholder.svg?height=100&width=100",
-    ubicacion: "Paysandú",
-    area: "Educación",
-    especialidad: "Inglés",
-    valoracion: 4.9,
-    descripcion: "Profesor de inglés certificado con experiencia en preparación para exámenes internacionales.",
-    icono: <BookOpen className="h-5 w-5" />,
-  },
-]
+// Importar datos de tutores
+import tutoresData from "./tutores-data.json"
+
+// Mapeo de iconos
+const iconMap = {
+  Code: Code,
+  PenTool: PenTool,
+  BookOpen: BookOpen,
+  Laptop: Laptop,
+  Briefcase: Briefcase,
+}
 
 export default function ComunidadPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [areaFilter, setAreaFilter] = useState("todas")
   const [formSubmitted, setFormSubmitted] = useState(false)
+
+  // Usar datos del JSON
+  const tutores = tutoresData.tutores
 
   // Filtrar tutores según búsqueda y filtro de área
   const tutoresFiltrados = tutores.filter((tutor) => {
@@ -158,6 +76,12 @@ export default function ComunidadPage() {
     e.preventDefault()
     setFormSubmitted(true)
     // Aquí iría la lógica para enviar los datos del formulario
+  }
+
+  // Función para obtener el componente de icono
+  const getIcon = (iconName: string) => {
+    const IconComponent = iconMap[iconName as keyof typeof iconMap]
+    return IconComponent ? <IconComponent className="h-5 w-5" /> : <BookOpen className="h-5 w-5" />
   }
 
   return (
@@ -215,7 +139,7 @@ export default function ComunidadPage() {
 
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded">
+                <Button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900">
                   <Plus className="mr-2 h-4 w-4" /> Postularme como tutor
                 </Button>
               </DialogTrigger>
@@ -342,7 +266,7 @@ export default function ComunidadPage() {
                   <CardContent className="pb-2">
                     <div className="flex items-center gap-1.5 mb-2">
                       <Badge variant="outline" className="flex items-center gap-1 font-normal">
-                        {tutor.icono}
+                        {getIcon(tutor.icono)}
                         {tutor.area}
                       </Badge>
                       <Badge variant="secondary" className="font-normal">
@@ -352,9 +276,9 @@ export default function ComunidadPage() {
                     <p className="text-sm text-muted-foreground line-clamp-3">{tutor.descripcion}</p>
                   </CardContent>
                   <CardFooter>
-                    <Button asChild className="bg-violet-400 hover:bg-violet-500 w-full gap-2">
+                    <Button asChild className="w-full gap-2">
                       <Link href={`/contacto?tutor=${tutor.nombre}`}>
-                        <MessageCircle className=" h-4 w-4" /> Contactar
+                        <MessageCircle className="h-4 w-4" /> Contactar
                       </Link>
                     </Button>
                   </CardFooter>
@@ -507,7 +431,7 @@ export default function ComunidadPage() {
               <DialogTrigger asChild>
                 <Button
                   size="lg"
-                  className="bg-violet-400 hover:bg-violet-500 border-0"
+                  className="bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 border-0"
                 >
                   Postularme ahora
                 </Button>
