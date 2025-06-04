@@ -2,49 +2,42 @@ import Link from "next/link"
 import { ArrowRight, CheckCircle, Laptop, BookOpen, Briefcase, PenTool, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ServiceCard from "@/components/service-card"
-import TestimonialCard from "@/components/testimonial-card"
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 gradient-bg-blue text-white relative overflow-hidden">
-        <div className="absolute inset-0 dots-pattern opacity-10"></div>
-        <div className="container px-4 md:px-6 relative">
+    <div className="pt-16 flex flex-col min-h-screen">
+      {/* Hero Section con blur */}
+      <section className="w-full py-12 md:py-24 lg:py-32 gradient-bg-blue">
+        <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white"> 
+               
                 Impulsamos tu pyme, educamos tu futuro
               </h1>
-              <p className="max-w-[600px] text-blue-100 md:text-xl">
+              <p className="max-w-[600px] text-purple-100 md:text-xl">
                 Soluciones digitales, educativas y laborales para vos. Todo lo que necesitas en un solo lugar.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gradient-to-r from-indigo-400 to-indigo-600 hover:from-indigo-600 hover:to-indigo-800 border-0"
-                >
+                <Button asChild size="lg" className="bg-violet-400 hover:bg-violet-500 text-white backdrop-blur-md">
                   <Link href="/servicios">
                     Nuestros Servicios <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-sm text-white border-white/20 hover:bg-white/20"
-                >
-                  <Link href="/contacto">Contactanos</Link>
+                <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 border-white/30">
+                  <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">Contactanos</Link>
                 </Button>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden shadow-2xl animate-float">
+            <div className="relative w-full max-w-[500px] aspect-video rounded-xl overflow-hidden backdrop-blur-md shadow-[0_30px_100px_rgba(0,0,0,0.7)]">
+
                 <img
                   src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Conecta Tu Mundo"
                   className="object-cover w-full h-full"
+                  style={{ animationIterationCount: 1 }}
                 />
               </div>
             </div>

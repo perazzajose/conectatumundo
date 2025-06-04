@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "Ana Rodríguez",
-      "avatar": "https://plus.unsplash.com/premium_photo-1739786995646-480d5cfd83dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
+       "avatar": "https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
       "ubicacion": "Montevideo",
       "area": "Programación",
       "especialidad": "Desarrollo Web",
@@ -15,7 +15,8 @@
     {
       "id": 2,
       "nombre": "Carlos Méndez",
-      "avatar": "https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
+        "avatar": "https://plus.unsplash.com/premium_photo-1739786995646-480d5cfd83dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
+     
       "ubicacion": "Canelones",
       "area": "Diseño",
       "especialidad": "UI/UX Design",
