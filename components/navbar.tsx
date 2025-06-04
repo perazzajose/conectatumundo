@@ -73,7 +73,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-6 mt-8">
             
              <Link
-                href="/inicio"
+                href="/"
                 className="text-lg font-medium hover:text-blue-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
