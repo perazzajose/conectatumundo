@@ -1,4 +1,5 @@
-import { Coffee, Leaf, Code, Utensils, Palette, Heart, BookOpen, ShoppingBag } from "lucide-react"
+import type React from "react"
+import { Coffee, Leaf, Code, Utensils, Palette, Heart, BookOpen, ShoppingBag, Store, Briefcase } from "lucide-react"
 import type { EmprendimientoData, Emprendimiento } from "./types"
 
 // Mapeo de iconos
@@ -17,6 +18,20 @@ const iconMap = {
 function getPlaceholder(width: number, height: number, text?: string): string {
   const baseUrl = `/placeholder.svg?height=${height}&width=${width}`
   return text ? `${baseUrl}&text=${encodeURIComponent(text)}` : baseUrl
+}
+
+// Función para obtener el icono de categoría
+export function getCategoryIcon(categoria: string) {
+  const iconMap: Record<string, React.ReactNode> = {
+    tecnologia: <Code className="h-4 w-4 mr-1" />,
+    diseno: <Palette className="h-4 w-4 mr-1" />,
+    comercio: <Store className="h-4 w-4 mr-1" />,
+    servicios: <Briefcase className="h-4 w-4 mr-1" />,
+    salud: <Heart className="h-4 w-4 mr-1" />,
+    gastronomia: <Utensils className="h-4 w-4 mr-1" />,
+  }
+
+  return iconMap[categoria.toLowerCase()] || <Store className="h-4 w-4 mr-1" />
 }
 
 // Función para procesar un emprendimiento individual
@@ -47,6 +62,9 @@ function processEmprendimiento(empData: EmprendimientoData): Emprendimiento {
 }
 
 // Función principal para procesar todos los emprendimientos
-export function processEmprendimientosData(emprendimientos: EmprendimientoData[]): Emprendimiento[] {
-  return emprendimientos.map(processEmprendimiento)
+export function processEmprendimientosData(emprendimientos: any[]): any[] {
+  return emprendimientos.map((emp) => ({
+    ...emp,
+    // Agregar cualquier procesamiento adicional aquí
+  }))
 }

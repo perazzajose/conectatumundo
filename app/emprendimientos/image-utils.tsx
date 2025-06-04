@@ -1,9 +1,19 @@
 // Utilidades adicionales para manejo de imágenes
 
-// Función para generar rutas de placeholder más específicas
-export function getPlaceholderImage(width = 400, height = 300, text?: string): string {
-  const baseUrl = `/placeholder.svg?height=${height}&width=${width}`
-  return text ? `${baseUrl}&text=${encodeURIComponent(text)}` : baseUrl
+// Función para generar imágenes aleatorias basadas en el ID
+export function getRandomImage(id: number, width = 600, height = 400): string {
+  const imageServices = [
+    `https://picsum.photos/${width}/${height}?random=${id}`,
+    `/placeholder.svg?height=${height}&width=${width}&text=Emprendimiento ${id}`,
+  ]
+
+  // Usar el ID para seleccionar consistentemente la misma imagen
+  return imageServices[id % imageServices.length]
+}
+
+// Función para obtener imagen de placeholder
+export function getPlaceholderImage(text: string, width = 600, height = 400): string {
+  return `/placeholder.svg?height=${height}&width=${width}&text=${encodeURIComponent(text)}`
 }
 
 // Función para validar si una imagen existe (opcional, para desarrollo)

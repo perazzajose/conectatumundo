@@ -225,10 +225,10 @@ export default function RecursosPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+              <div className="inline-block rounded-lg bg-indigo-100 px-3 py-1 text-sm text-indigo-700 dark:bg-blue-900/30 dark:text-blue-300">
                 Oportunidades Educativas
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-blue-700 dark:text-blue-400">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-700 dark:text-gray-800">
                 Formaciones Gratuitas en Uruguay
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -267,7 +267,7 @@ export default function RecursosPage() {
                     href={formacion.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-600 text-white hover:bg-blue-700 h-10 px-4 py-2 w-full"
+                    className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded"
                   >
                     Más información
                     <ArrowRight className="ml-2 h-4 w-4" />

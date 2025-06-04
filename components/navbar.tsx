@@ -57,7 +57,7 @@ export default function Navbar() {
 >
   <Link 
     href="/servicios" 
-    className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded">
+    className="bg-violet-600 hover:bg-violet-800 text-white py-2 px-4 rounded">
     Nuestros Servicios
   </Link>
 </Button>

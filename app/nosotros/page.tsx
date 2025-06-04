@@ -27,7 +27,7 @@ export default function NosotrosPage() {
               <div className="inline-block rounded-lg bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm px-3 py-1 text-sm ">
                 Nuestra Historia
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-purple-700">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-800">
                 Conectando personas con soluciones
               </h2>
               <p className="text-zinc-500 md:text-xl/relaxed">
@@ -60,7 +60,7 @@ export default function NosotrosPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4 p-6 bg-white rounded-lg shadow-sm">
               <div className="inline-block rounded-lg bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm px-3 py-1 text-sm ">Nuestra Misión</div>
-              <h2 className="text-2xl font-bold tracking-tighter text-purple-700">
+              <h2 className="text-2xl font-bold tracking-tighter text-gray-700">
                 Impulsar el crecimiento de personas y empresas
               </h2>
               <p className="text-zinc-500">
@@ -85,7 +85,7 @@ export default function NosotrosPage() {
             </div>
             <div className="space-y-4 p-6 bg-white rounded-lg shadow-sm">
               <div className="inline-block rounded-lg bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm px-3 py-1 text-sm ">Nuestra Visión</div>
-              <h2 className="text-2xl font-bold tracking-tighter text-purple-700">
+              <h2 className="text-2xl font-bold tracking-tighter text-gray-700">
                 Ser referentes en soluciones integrales
               </h2>
               <p className="text-zinc-500">
@@ -122,7 +122,7 @@ export default function NosotrosPage() {
               <div className="inline-block rounded-lg bg-purple-600 hover:bg-purple-700 text-white backdrop-blur-sm px-3 py-1 text-sm ">
                 Nuestros Valores
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-purple-700">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-700">
                 Los principios que nos guían
               </h2>
               <p className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

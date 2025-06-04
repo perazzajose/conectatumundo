@@ -486,7 +486,7 @@ export default function EmprendimientosPage() {
         <div className="container px-4 md:px-6 relative">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter ">
                 ¿Listo para llevar tu emprendimiento al siguiente nivel?
               </h2>
               <p className="max-w-[900px] text-violet-100 text-sm md:text-base lg:text-xl/relaxed px-4">
@@ -497,7 +497,7 @@ export default function EmprendimientosPage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded border-0 flex-1"
+                className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded"
               >
                 <Link href="/contacto">
                   <span className="hidden sm:inline">Solicitar consultoría gratuita</span>
