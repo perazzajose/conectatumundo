@@ -8,8 +8,8 @@
       "categoria": "Gastronomía",
       "ubicacion": "Salinas, Canelones",
       "servicios": ["Marketing Digital", "Diseño de Marca", "Gestión de Redes"],
-      "imagen": "https://res.cloudinary.com/druegavlg/image/upload/v1748696786/Captura_de_pantalla_2025-05-30_104843_t45tki.png",
-      "logo": "https://res.cloudinary.com/druegavlg/image/upload/v1748696786/Captura_de_pantalla_2025-05-30_104843_t45tki.png",
+      "imagen": "https://res.cloudinary.com/druegavlg/image/upload/v1749143886/Dise%C3%B1o_sin_t%C3%ADtulo_3_ttlszq.png",
+      "logo": "https://res.cloudinary.com/druegavlg/image/upload/v1749143886/Dise%C3%B1o_sin_t%C3%ADtulo_3_ttlszq.png",
       "icono": "",
       "valoracion": 5.0,
       "destacado": true,
@@ -19,17 +19,52 @@
         "historia": "",
         "desafio": "",
         "solucion": "",
-        "resultados": [
-          "",
-          "",
-          ""
-        ],
+        "resultados": ["", "", ""],
         "testimonio": {
           "texto": "",
           "autor": "",
           "cargo": ""
         },
-        "galeria": ["https://res.cloudinary.com/druegavlg/image/upload/v1748854698/2024-12-15_2_dh4jfx.webp", "https://res.cloudinary.com/druegavlg/image/upload/v1748854705/2024-12-15_rhxqlf.webp", "https://res.cloudinary.com/druegavlg/image/upload/v1748854702/2024-12-15_1_lpoecr.webp"]
+        "galeria": [
+          "https://res.cloudinary.com/druegavlg/image/upload/v1749142886/1_ubwpml.png",
+          "https://res.cloudinary.com/druegavlg/image/upload/v1749142887/2_io2k5f.png",
+          "https://res.cloudinary.com/druegavlg/image/upload/v1749142887/3_xgrzqh.png"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Estilo Único",
+      "descripcion": "Ropa urbana personalizada",
+      "categoria": "Moda",
+      "ubicacion": "Montevideo, Uruguay",
+      "servicios": ["Diseño de Prendas", "Ventas Online", "Asesoría de Imagen"],
+      "imagen": "https://res.cloudinary.com/druegavlg/image/upload/v1748855700/ropa_urbana_moda_example_1.webp",
+      "logo": "https://res.cloudinary.com/druegavlg/image/upload/v1748855705/logo_estilo_unico.webp",
+      "icono": "",
+      "valoracion": 4.8,
+      "destacado": false,
+      "sitioWeb": "https://estilounico.vercel.app",
+      "instagram": "@estilo.unico.uy",
+      "detalles": {
+        "historia": "Nacido en plena pandemia, Estilo Único surgió de la necesidad de expresarse con estilo desde casa.",
+        "desafio": "Crear una marca con identidad fuerte en un mercado saturado.",
+        "solucion": "Diseños personalizados y colaboraciones con artistas locales.",
+        "resultados": [
+          "Incremento del 300% en seguidores en 6 meses.",
+          "Colaboraciones con 5 influencers de moda.",
+          "Más de 500 prendas vendidas en el primer año."
+        ],
+        "testimonio": {
+          "texto": "Gracias a su ayuda, pude llegar a un público que nunca pensé alcanzar.",
+          "autor": "Lucía Fernández",
+          "cargo": "Fundadora"
+        },
+        "galeria": [
+          "https://res.cloudinary.com/druegavlg/image/upload/v1748855709/galeria_estilo_unico_1.webp",
+          "https://res.cloudinary.com/druegavlg/image/upload/v1748855712/galeria_estilo_unico_2.webp",
+          "https://res.cloudinary.com/druegavlg/image/upload/v1748855715/galeria_estilo_unico_3.webp"
+        ]
       }
     }
   ]

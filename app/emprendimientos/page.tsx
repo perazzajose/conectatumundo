@@ -219,7 +219,7 @@ export default function EmprendimientosPage() {
                           alt={emprendimiento.nombre}
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-contain"
+                          className="object-cover"
                           onError={() => handleImageError(emprendimiento.imagen)}
                         />
                         <div className="absolute top-3 right-3 z-10">
@@ -305,7 +305,7 @@ export default function EmprendimientosPage() {
                         alt={emprendimiento.nombre}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                        className="object-contain"
+                        className="object-cover"
                         onError={() => handleImageError(emprendimiento.imagen)}
                       />
                       {emprendimiento.destacado && (
@@ -494,11 +494,7 @@ export default function EmprendimientosPage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
-              <Button
-                asChild
-                size="lg"
-                className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded"
-              >
+              <Button asChild size="lg" className="bg-violet-400 hover:bg-violet-500 text-white py-2 px-4 rounded">
                 <Link href="/contacto">
                   <span className="hidden sm:inline">Solicitar consultoría gratuita</span>
                   <span className="sm:hidden">Consultoría gratuita</span>
@@ -537,17 +533,19 @@ export default function EmprendimientosPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <div className="relative h-48 md:h-64 flex items-center justify-center bg-gray-100 rounded-md mb-4">
+                  <div className="relative aspect-[4/3] flex items-center justify-center bg-gray-100 rounded-md mb-4">
                     <Image
                       src={
                         getSafeImageUrl(emprendimientoSeleccionado.imagen, emprendimientoSeleccionado.nombre) ||
+                        "/placeholder.svg" ||
+                        "/placeholder.svg" ||
                         "/placeholder.svg" ||
                         "/placeholder.svg"
                       }
                       alt={emprendimientoSeleccionado.nombre}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-contain rounded-md"
+                      className="object-cover rounded-md"
                       onError={() => handleImageError(emprendimientoSeleccionado.imagen)}
                     />
                   </div>
@@ -666,7 +664,7 @@ export default function EmprendimientosPage() {
                     {emprendimientoSeleccionado.detalles.galeria.map((imagen: string, index: number) => (
                       <div
                         key={index}
-                        className="relative h-24 md:h-32 flex items-center justify-center bg-gray-100 rounded-md"
+                        className="relative aspect-[3/2] flex items-center justify-center bg-gray-100 rounded-md"
                       >
                         <Image
                           src={getSafeImageUrl(
@@ -676,7 +674,7 @@ export default function EmprendimientosPage() {
                           alt={`${emprendimientoSeleccionado.nombre} - Imagen ${index + 1}`}
                           fill
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
-                          className="object-contain rounded-md"
+                          className="object-cover rounded-md"
                           onError={() => handleImageError(imagen)}
                         />
                       </div>

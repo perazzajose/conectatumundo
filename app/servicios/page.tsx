@@ -32,7 +32,7 @@ export default function ServiciosPage() {
               </h2>
               <p className="text-gray-600 md:text-xl/relaxed">
                 Desarrollamos estrategias de marketing digital personalizadas para aumentar la visibilidad de tu marca y
-                conectar con tu audiencia.
+                conectar con la audiencia esperada.
               </p>
               <ul className="grid gap-3">
                 <li className="flex items-start gap-2">
@@ -48,7 +48,7 @@ export default function ServiciosPage() {
                     <span className="font-bold text-gray-900">Gestión de redes sociales:</span>
                     <span className="text-gray-700">
                       {" "}
-                      Creación de contenido, programación y análisis de resultados.
+                      programación de contenido, automatización y análisis de métricas.
                     </span>
                   </div>
                 </li>
@@ -100,48 +100,43 @@ src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?q=80&w=1974&au
             </div>
             <div className="order-1 lg:order-2 space-y-4">
               <div className="inline-block rounded-lg bg-purple-100/80 px-3 py-1 text-sm text-purple-700 backdrop-blur-xs">Educación</div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-900">
-                Aprendizaje personalizado
-              </h2>
-              <p className="text-gray-600 md:text-xl/relaxed">
-                Ofrecemos clases particulares y apoyo académico adaptado a las necesidades de cada estudiante.
-              </p>
-              <ul className="grid gap-3">
-                <li className="flex items-start gap-2">
-                  <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-gray-900">Literatura:</span>
-                    <span className="text-gray-700"> Generos, Narrativa, Poesia, Lirica tradicional, Epica, Modernismo, Romanticismo etc....</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-gray-900">Historia:</span>
-                    <span className="text-gray-700">
-                      {" "}
-                      Prehistoria, Edad Media, Feudalismo, Ilustración, Crisis 29, Dictadura 73, etc...
-                    </span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-gray-900">Informática:</span>
-                    <span className="text-gray-700"> Ofimática, programación básica, diseño gráfico.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-gray-900">Apoyo:</span>
-                    <span className="text-gray-700">
-                      {" "}
-                      Preparación para todos los exámenes, técnicas de estudio, tareas dirigidas.
-                    </span>
-                  </div>
-                </li>
-              </ul>
+             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-900">
+  Aprendizaje personalizado
+</h2>
+<p className="text-gray-600 md:text-xl/relaxed">
+  Ofrecemos clases particulares centradas en el desarrollo de habilidades de estudio adaptadas a cada estudiante.
+</p>
+<ul className="grid gap-3">
+  <li className="flex items-start gap-2">
+    <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
+    <div>
+      <span className="font-bold text-gray-900">Enfoque integral:</span>
+      <span className="text-gray-700"> Técnicas y estrategias para estudiar cualquier materia de secundaria.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2">
+    <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
+    <div>
+      <span className="font-bold text-gray-900">Organización:</span>
+      <span className="text-gray-700"> Cómo planificar tiempos, priorizar tareas y mantener el enfoque.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2">
+    <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
+    <div>
+      <span className="font-bold text-gray-900">Comprensión:</span>
+      <span className="text-gray-700"> Lectura activa, toma de apuntes y elaboración de resúmenes efectivos.</span>
+    </div>
+  </li>
+  <li className="flex items-start gap-2">
+    <ArrowRight className="h-5 w-5 text-purple-500 mt-0.5" />
+    <div>
+      <span className="font-bold text-gray-900">Práctica:</span>
+      <span className="text-gray-700"> Métodos de repaso, memorización y resolución de ejercicios.</span>
+    </div>
+  </li>
+</ul>
+
              
             </div>
           </div>

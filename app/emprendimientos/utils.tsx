@@ -1,66 +1,59 @@
-import type React from "react"
-import {
-  Coffee,
-  Leaf,
-  Code,
-  Utensils,
-  Palette,
-  BookOpen,
-  ShoppingBag,
-  Store,
-  Briefcase,
-  Heart,
-  Laptop,
-  Camera,
-  Music,
-  Car,
-  Home,
-  Scissors,
-  Dumbbell,
-  Baby,
-  PenTool,
-  Shirt,
-} from "lucide-react"
-import type { Emprendimiento } from "./types"
+import { Coffee, Utensils, Shirt, Palette, BookOpen, GraduationCap, ShoppingBag, Store, Briefcase } from "lucide-react"
 
-// Mapeo de iconos de string a componentes React
-const iconMap: Record<string, React.ComponentType<any>> = {
+// Mapeo de iconos
+const iconMap = {
   Coffee,
-  Leaf,
-  Code,
   Utensils,
+  Shirt,
   Palette,
   BookOpen,
+  GraduationCap,
   ShoppingBag,
   Store,
   Briefcase,
-  Heart,
-  Laptop,
-  Camera,
-  Music,
-  Car,
-  Home,
-  Scissors,
-  Dumbbell,
-  Baby,
-  PenTool,
-  Shirt,
 }
 
-// Función para convertir string de icono a componente React
-export function getIconComponent(iconName: string): React.ReactNode {
-  const IconComponent = iconMap[iconName]
-  if (IconComponent) {
-    return <IconComponent className="h-4 w-4" />
+// Función para obtener el icono correcto
+export const getIcon = (iconName: string) => {
+  if (!iconName || iconName === "") {
+    // Asignar iconos por defecto según categoría
+    return <Utensils className="h-4 w-4" />
   }
-  // Icono por defecto si no se encuentra
-  return <Store className="h-4 w-4" />
+
+  const IconComponent = iconMap[iconName as keyof typeof iconMap]
+  return IconComponent ? <IconComponent className="h-4 w-4" /> : <Store className="h-4 w-4" />
 }
 
-// Función para procesar los datos de emprendimientos y convertir iconos
-export function processEmprendimientosData(emprendimientos: any[]): Emprendimiento[] {
-  return emprendimientos.map((emprendimiento) => ({
-    ...emprendimiento,
-    icono: getIconComponent(emprendimiento.icono), // Convertir string a componente React
-  }))
+// Función para procesar los datos de emprendimientos
+export function processEmprendimientosData(emprendimientos: any[]) {
+  return emprendimientos.map((emprendimiento) => {
+    // Asignar icono según categoría si no tiene uno definido
+    let iconName = emprendimiento.icono
+    if (!iconName || iconName === "") {
+      switch (emprendimiento.categoria) {
+        case "Gastronomía":
+          iconName = "Utensils"
+          break
+        case "Moda":
+          iconName = "Shirt"
+          break
+        case "Arte y Diseño":
+          iconName = "Palette"
+          break
+        case "Educación":
+          iconName = "GraduationCap"
+          break
+        case "Comercio":
+          iconName = "ShoppingBag"
+          break
+        default:
+          iconName = "Store"
+      }
+    }
+
+    return {
+      ...emprendimiento,
+      icono: getIcon(iconName),
+    }
+  })
 }
