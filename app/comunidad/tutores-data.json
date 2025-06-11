@@ -10,7 +10,7 @@
       "valoracion": 4.8,
       "descripcion": "Desarrolladora full-stack con 5 años de experiencia. Especializada en React, Node.js y bases de datos.",
       "icono": "Code",
-      "whatsapp": "https://wa.me/59899123456?text=Hola%20Ana,%20me%20interesa%20recibir%20clases%20de%20Desarrollo%20Web"
+      "whatsapp": ""
     },
     {
       "id": 2,
@@ -23,7 +23,7 @@
       "valoracion": 4.9,
       "descripcion": "Diseñador de interfaces con experiencia en Figma y Adobe XD. Enfoque en experiencias de usuario intuitivas.",
       "icono": "PenTool",
-      "whatsapp": "https://wa.me/59899234567?text=Hola%20Carlos,%20me%20interesa%20recibir%20clases%20de%20UI/UX%20Design"
+      "whatsapp": ""
     },
     {
       "id": 3,
@@ -35,7 +35,7 @@
       "valoracion": 4.7,
       "descripcion": "Profesora de matemáticas con 8 años de experiencia. Especializada en preparación para exámenes.",
       "icono": "BookOpen",
-      "whatsapp": "https://wa.me/59899345678?text=Hola%20Laura,%20me%20interesa%20recibir%20clases%20de%20Matemáticas"
+      "whatsapp": ""
     },
     {
       "id": 4,
@@ -47,7 +47,7 @@
       "valoracion": 4.6,
       "descripcion": "Técnico en sistemas con certificaciones en reparación de equipos y redes. Experiencia en solución de problemas.",
       "icono": "Laptop",
-      "whatsapp": "https://wa.me/59899456789?text=Hola%20Martín,%20necesito%20ayuda%20con%20Soporte%20Técnico"
+      "whatsapp": ""
     },
     {
       "id": 5,
@@ -59,7 +59,7 @@
       "valoracion": 4.9,
       "descripcion": "Consultora de RRHH especializada en selección de personal y desarrollo de carrera profesional.",
       "icono": "Briefcase",
-      "whatsapp": "https://wa.me/59899567890?text=Hola%20Sofía,%20me%20interesa%20consultoría%20en%20Recursos%20Humanos"
+      "whatsapp": ""
     },
     {
       "id": 6,
@@ -71,7 +71,7 @@
       "valoracion": 4.8,
       "descripcion": "Desarrollador de aplicaciones móviles con experiencia en React Native y Flutter. Enfoque en rendimiento.",
       "icono": "Code",
-      "whatsapp": "https://wa.me/59899678901?text=Hola%20Diego,%20me%20interesa%20aprender%20Desarrollo%20Móvil"
+      "whatsapp": ""
     },
     {
       "id": 7,
@@ -83,7 +83,7 @@
       "valoracion": 4.7,
       "descripcion": "Diseñadora gráfica especializada en identidad de marca y materiales promocionales para emprendimientos.",
       "icono": "PenTool",
-      "whatsapp": "https://wa.me/59899789012?text=Hola%20Valentina,%20necesito%20ayuda%20con%20Diseño%20Gráfico"
+      "whatsapp": ""
     },
     {
       "id": 8,
@@ -95,7 +95,7 @@
       "valoracion": 4.9,
       "descripcion": "Profesor de inglés certificado con experiencia en preparación para exámenes internacionales.",
       "icono": "BookOpen",
-      "whatsapp": "https://wa.me/59899890123?text=Hola%20Gabriel,%20me%20interesa%20recibir%20clases%20de%20Inglés"
+      "whatsapp": ""
     }
   ]
 }
