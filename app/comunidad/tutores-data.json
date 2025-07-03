@@ -2,99 +2,14 @@
   "tutores": [
     {
       "id": 1,
-      "nombre": "Ana Rodríguez",
-       "avatar": "https://plus.unsplash.com/premium_photo-1739786996040-32bde1db0610?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
-      "ubicacion": "Montevideo",
+      "nombre": "José Fernández",
+       "avatar": "https://www.freepik.es/psd-premium/avatar-dibujos-animados-procesamiento-3d-aislado_21616108.htm#fromView=search&page=1&position=30&uuid=a4903ba7-855a-47db-ab7c-e2591c59255a&query=Avatar+3d",
+      "ubicacion": "Salinas - Canelones",
       "area": "Programación",
       "especialidad": "Desarrollo Web",
       "valoracion": 4.8,
-      "descripcion": "Desarrolladora full-stack con 5 años de experiencia. Especializada en React, Node.js y bases de datos.",
+      "descripcion": "Desarrollador front-end con 4 años de experiencia. Especializado en Js, Nextjs y Astro",
       "icono": "Code",
-      "whatsapp": ""
-    },
-    {
-      "id": 2,
-      "nombre": "Carlos Méndez",
-        "avatar": "https://plus.unsplash.com/premium_photo-1739786995646-480d5cfd83dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
-     
-      "ubicacion": "Canelones",
-      "area": "Diseño",
-      "especialidad": "UI/UX Design",
-      "valoracion": 4.9,
-      "descripcion": "Diseñador de interfaces con experiencia en Figma y Adobe XD. Enfoque en experiencias de usuario intuitivas.",
-      "icono": "PenTool",
-      "whatsapp": ""
-    },
-    {
-      "id": 3,
-      "nombre": "Laura Fernández",
-      "avatar": "https://plus.unsplash.com/premium_photo-1739786995552-0a2ccfa62ba5?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
-      "ubicacion": "Maldonado",
-      "area": "Educación",
-      "especialidad": "Matemáticas",
-      "valoracion": 4.7,
-      "descripcion": "Profesora de matemáticas con 8 años de experiencia. Especializada en preparación para exámenes.",
-      "icono": "BookOpen",
-      "whatsapp": ""
-    },
-    {
-      "id": 4,
-      "nombre": "Martín Torres",
-      "avatar": "https://plus.unsplash.com/premium_photo-1739786996060-2769f1ded135?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dheight=100&width=100",
-      "ubicacion": "Montevideo",
-      "area": "Tecnología",
-      "especialidad": "Soporte Técnico",
-      "valoracion": 4.6,
-      "descripcion": "Técnico en sistemas con certificaciones en reparación de equipos y redes. Experiencia en solución de problemas.",
-      "icono": "Laptop",
-      "whatsapp": ""
-    },
-    {
-      "id": 5,
-      "nombre": "Sofía Ramírez",
-      "avatar": "/placeholder.svg?height=100&width=100",
-      "ubicacion": "Colonia",
-      "area": "Empleo",
-      "especialidad": "Recursos Humanos",
-      "valoracion": 4.9,
-      "descripcion": "Consultora de RRHH especializada en selección de personal y desarrollo de carrera profesional.",
-      "icono": "Briefcase",
-      "whatsapp": ""
-    },
-    {
-      "id": 6,
-      "nombre": "Diego Álvarez",
-      "avatar": "https://plus.unsplash.com/premium_photo-1739786996022-5ed5b56834e2?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=100&width=100",
-      "ubicacion": "Montevideo",
-      "area": "Programación",
-      "especialidad": "Desarrollo Móvil",
-      "valoracion": 4.8,
-      "descripcion": "Desarrollador de aplicaciones móviles con experiencia en React Native y Flutter. Enfoque en rendimiento.",
-      "icono": "Code",
-      "whatsapp": ""
-    },
-    {
-      "id": 7,
-      "nombre": "Valentina Sosa",
-      "avatar": "/placeholder.svg?height=100&width=100",
-      "ubicacion": "Salto",
-      "area": "Diseño",
-      "especialidad": "Diseño Gráfico",
-      "valoracion": 4.7,
-      "descripcion": "Diseñadora gráfica especializada en identidad de marca y materiales promocionales para emprendimientos.",
-      "icono": "PenTool",
-      "whatsapp": ""
-    },
-    {
-      "id": 8,
-      "nombre": "Gabriel Núñez",
-      "avatar": "/placeholder.svg?height=100&width=100",
-      "ubicacion": "Paysandú",
-      "area": "Educación",
-      "especialidad": "Inglés",
-      "valoracion": 4.9,
-      "descripcion": "Profesor de inglés certificado con experiencia en preparación para exámenes internacionales.",
-      "icono": "BookOpen",
       "whatsapp": ""
     }
   ]
