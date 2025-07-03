@@ -2,12 +2,12 @@
   "recursos": [
     {
       "id": 1,
-      "title": "Curso de Desarrollo Web de 'CodigoFacilito'",
+      "title": "Biblioteca Universitaria",
       "description": "Aprende desarrollo web. Recurso gratuito compartido por la comunidad.",
       "category": "Cursos",
-      "size": "0 MB",
-      "platform": "Google Drive",
-      "downloadUrl": "https://drive.google.com/drive/folders/119UfMSrcpw1OIld3nestpb73BxxlwPrD",
+      "size": "25 Gb",
+      "platform": "Mega",
+      "downloadUrl": "https://mega.nz/folder/8Fs1lT6J#3leNMvWbFV8cbSCrPI2w0g",
       "icon": "BookOpen"
     },
     {
@@ -32,12 +32,12 @@
     },
     {
       "id": 4,
-      "title": "Curso de Inglés B1 - B2",
-      "description": "Inglés Intermedio con este curso gratuito compartido en X.com.",
+      "title": "Logística",
+      "description": "Descubrí cómo funciona el mundo del transporte, el almacenamiento y la gestión eficiente de productos y servicios.s",
       "category": "Cursos",
       "size": "0 MB",
       "platform": "Google Drive",
-      "downloadUrl": "https://drive.google.com/drive/u/0/folders/1-01_4gn3aLDX-1IYxcVi3bJ5NuMFTpWM?fbclid=IwAR1V5iNhfkKIvxZ1DGFiE1vYyt2bScKrZOAy5QN47Ob6td7GFOWeyjAJxRE",
+      "downloadUrl": "https://drive.google.com/drive/u/0/folders/1n1KdzwCRrUtlyq14K9pi9wyBjfXw_poS?fbclid=IwAR3JK8eVDRZaOUFIYhhOxnAAzCxFBlTtJyoyWpn8624o2_0rhLxIE1zhkK8",
       "icon": "BookOpen"
     },
     {
@@ -73,7 +73,7 @@
     {
       "id": 8,
       "title": "Biblioteca de Medicina",
-      "description": "Libros especializados en anatomía, farmacología y cirugía.",
+      "description": "Libros especializados en anatomía, farmacología y más.",
       "category": "E-books",
       "size": "2.8 GB",
       "platform": "Google Drive",
@@ -112,12 +112,12 @@
     },
     {
       "id": 12,
-      "title": "Curso Básico de Contabilidad",
-      "description": "Fundamentos contables para emprendedores y profesionales no especializados.",
+      "title": "Colección ¿Como funciona?",
+      "description": "Esta es una serie de libros ilustrados para niños, adolescentes o público curioso, que explican de forma sencilla cómo funcionan cosas del mundo real",
       "category": "Cursos",
       "size": "1.8 GB",
       "platform": "MediaFire",
-      "downloadUrl": "https://www.mediafire.com/folder/msr883s9bxbk7/Curso+Básico+de+Contabilidad+para+no+Contadores",
+      "downloadUrl": "https://drive.google.com/drive/folders/1QCIM9tNnBTt_JTUbRJoUea62s8MBGYgk?fbclid=IwZXh0bgNhZW0CMTAAAR1Ytr1-AC3mz485TdvZL6SqjrSHxIayhQ8P6cUT6P3W0r1BYoLps6gKtXo_aem_8wAia_u4cjBZAwQsYzTAOw",
       "icon": "FileText"
     },
     {
