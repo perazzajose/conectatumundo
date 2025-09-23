@@ -44,6 +44,7 @@ const iconMap = {
   BookOpen: BookOpen,
   Laptop: Laptop,
   Briefcase: Briefcase,
+  
 }
 
 export default function ComunidadPage() {

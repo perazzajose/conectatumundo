@@ -1,15 +1,28 @@
+
 {
   "tutores": [
     {
       "id": 1,
       "nombre": "José Fernández",
-       "avatar": "https://www.freepik.es/psd-premium/avatar-dibujos-animados-procesamiento-3d-aislado_21616108.htm#fromView=search&page=1&position=30&uuid=a4903ba7-855a-47db-ab7c-e2591c59255a&query=Avatar+3d",
+      "avatar": "https://i.postimg.cc/fbBRcsPZ/Generated-Image-September-23-2025-3-37-AM.png",
       "ubicacion": "Salinas - Canelones",
       "area": "Programación",
       "especialidad": "Desarrollo Web",
       "valoracion": 4.8,
       "descripcion": "Desarrollador front-end con 4 años de experiencia. Especializado en Js, Nextjs y Astro",
       "icono": "Code",
+      "whatsapp": ""
+    },
+     {
+      "id": 2,
+      "nombre": "Ana Perazza",
+      "avatar": "https://i.postimg.cc/52kCJwx8/Generated-Image-September-23-2025-3-44-AM.png",
+      "ubicacion": "Marindia - Canelones",
+      "area": "Arquitecta",
+      "especialidad": "Arq. General",
+      "valoracion": 4.8,
+      "descripcion": "Estudiante de último año de arquitectura, diseño y urbanismo en Udelar",
+      "icono": "BookOpen",
       "whatsapp": ""
     }
   ]

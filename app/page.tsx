@@ -26,7 +26,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-md text-white hover:bg-white/20 border-white/30">
-                  <Link href="https://api.whatsapp.com/send/?phone=59898104211&text&type=phone_number&app_absent=0" target="_blank">Contactanos</Link>
+                  <Link href="https://api.whatsapp.com/send/?phone=59895197314&text&type=phone_number&app_absent=0" target="_blank">Contactanos</Link>
                 </Button>
               </div>
             </div>
