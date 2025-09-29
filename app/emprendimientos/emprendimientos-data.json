@@ -34,36 +34,33 @@
     },
     {
       "id": 2,
-      "nombre": "Estilo Único",
-      "descripcion": "Ropa urbana personalizada",
-      "categoria": "Moda",
+      "nombre": "ArchiCad Studio",
+      "descripcion": "Arquitectura a tu alcance",
+      "categoria": "Arquitectura",
       "ubicacion": "Montevideo, Uruguay",
-      "servicios": ["Diseño de Prendas", "Ventas Online", "Asesoría de Imagen"],
-      "imagen": "https://res.cloudinary.com/druegavlg/image/upload/v1748855700/ropa_urbana_moda_example_1.webp",
-      "logo": "https://res.cloudinary.com/druegavlg/image/upload/v1748855705/logo_estilo_unico.webp",
+      "servicios": ["Diseño de bloques", "Planos", "Asesorías"],
+      "imagen": "https://res.cloudinary.com/dsysu4lnb/image/upload/v1759143570/autocad-logo-png_seeklogo-482394_gd7frv.png",
+      "logo": "https://res.cloudinary.com/dsysu4lnb/image/upload/v1759143570/autocad-logo-png_seeklogo-482394_gd7frv.png",
       "icono": "",
       "valoracion": 4.8,
       "destacado": false,
-      "sitioWeb": "https://estilounico.vercel.app",
+      "sitioWeb": "https://archicad.vercel.app",
       "instagram": "@estilo.unico.uy",
       "detalles": {
-        "historia": "Nacido en plena pandemia, Estilo Único surgió de la necesidad de expresarse con estilo desde casa.",
-        "desafio": "Crear una marca con identidad fuerte en un mercado saturado.",
-        "solucion": "Diseños personalizados y colaboraciones con artistas locales.",
+        "historia": "Un emprendimiento de un estudiante de arquitectura",
+        "desafio": "Sitio web",
+        "solucion": "Landing-page con explicacion y contacto detallado de los servicios que nuestro estudiante ofrece",
         "resultados": [
-          "Incremento del 300% en seguidores en 6 meses.",
-          "Colaboraciones con 5 influencers de moda.",
-          "Más de 500 prendas vendidas en el primer año."
+          "Incremento de visualizacion y confiabilidad",
+          "Explicacion resumida de sus servicio"
         ],
         "testimonio": {
-          "texto": "Gracias a su ayuda, pude llegar a un público que nunca pensé alcanzar.",
-          "autor": "Lucía Fernández",
+          "texto": "",
+          "autor": "Ana Perazza",
           "cargo": "Fundadora"
         },
         "galeria": [
-          "https://res.cloudinary.com/druegavlg/image/upload/v1748855709/galeria_estilo_unico_1.webp",
-          "https://res.cloudinary.com/druegavlg/image/upload/v1748855712/galeria_estilo_unico_2.webp",
-          "https://res.cloudinary.com/druegavlg/image/upload/v1748855715/galeria_estilo_unico_3.webp"
+         
         ]
       }
     }
