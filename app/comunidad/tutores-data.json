@@ -1,0 +1,29 @@
+
+{
+  "tutores": [
+    {
+      "id": 1,
+      "nombre": "José Fernández",
+      "avatar": "https://i.postimg.cc/fbBRcsPZ/Generated-Image-September-23-2025-3-37-AM.png",
+      "ubicacion": "Salinas - Canelones",
+      "area": "Programación",
+      "especialidad": "Desarrollo Web",
+      "valoracion": 4.8,
+      "descripcion": "Desarrollador front-end con 4 años de experiencia. Especializado en Js, Nextjs y Astro",
+      "icono": "Code",
+      "whatsapp": ""
+    },
+     {
+      "id": 2,
+      "nombre": "Ana Perazza",
+      "avatar": "https://i.postimg.cc/52kCJwx8/Generated-Image-September-23-2025-3-44-AM.png",
+      "ubicacion": "Marindia - Canelones",
+      "area": "Arquitecta",
+      "especialidad": "Arq. General",
+      "valoracion": 4.8,
+      "descripcion": "Estudiante de último año de arquitectura, diseño y urbanismo en Udelar",
+      "icono": "BookOpen",
+      "whatsapp": ""
+    }
+  ]
+}
